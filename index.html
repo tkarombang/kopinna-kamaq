@@ -7,169 +7,300 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kopinna-Kamaq</title>
 
-  <!-- My Fonts -->
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;300;400;700&display=swap" rel="stylesheet">
 
-  <!-- My Style -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- Feather Icons -->
+  <!-- feather Icons -->
   <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- NAVBAR START-->
+  <!-- navbar start -->
   <nav class="navbar">
-    <a href="#" class="navbar-logo">kopinna<span>kamaq</span>.</a>
+    <a href="#" class="nav-logo">Kopinna<span>Kamaq</span></a>
 
     <div class="navbar-nav">
-      <a href="#home">Home</a>
+      <a href="#">Home</a>
       <a href="#about">Tentang Kami</a>
       <a href="#menu">Menu</a>
+      <a href="#products">Produk</a>
       <a href="#contact">Kontak</a>
     </div>
 
-    <div class="navbar-extra">
-      <a href="#" id="search"><i data-feather="search"></i></a>
-      <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+    <div class="nav-extra">
+      <a href="#" id="search-icon"><i data-feather="search"></i></a>
+      <!-- <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a> -->
       <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
     </div>
 
+    <!-- Search Form Start -->
+    <div class="search-form">
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+    <!-- Search Form End -->
+
   </nav>
-  <!-- NAVBAR END -->
+  <!-- navbar end -->
+  <main>
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Nikmatnya Secangkir <span>Kopi</span> Bersama</h1>
+        <p>Rasa Kopi Asli dari Pegunungan yang ada di Sulawesi</p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End -->
 
-  <!-- HERO SECTION START -->
-  <section class="hero" id="home">
-    <main class="content">
-      <h1>Mari Nikamti Secangkir <span>Kopi</span></h1>
-      <p>Rasa Kopi Asli dari Pegunungan yang ada di Seluruh Penjuru Pulau Sulawesi </p>
-      <a href="#" class="cta">Belli Sekarang</a>
-    </main>
-  </section>
-  <!-- HERO SECTION END -->
-
-  <!-- ABOUT SECTION START -->
-  <section id="about" class="about">
-    <h2><span>Tentang </span>Kami</h2>
-
-    <div class="row">
-      <div class="about-img">
-        <img src="img/coffeeBeans.jpg" alt="Tentang Kami">
-      </div>
-
-      <div class="content">
-        <h3>Kenapa Memilih Kopi Kami</h3>
-        <div class="container">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolores obcaecati culpa iusto dolor.
-            Recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium animi dolores qui. Magnam
-            vero
-            explicabo
-            optio vitae quae facere ipsa.</p>
-          <img src="img/Kopi White.png" alt="logoBrand">
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2>Tentang<span>Kami</span></h2>
+      <div class="row">
+        <div class="content">
+          <h3>Keunggulan Kopi Kami</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quam recusandae amet temporibus obcaecati
+            magni
+            dolores, ex beatae placeat omnis, inventore, quo facilis dolorum quod.</p>
+        </div>
+        <div class="about-img">
+          <img src="/img/coffeeBeans.jpg" alt="kopi">
         </div>
       </div>
-    </div>
-  </section>
-  <!-- ABOUT SECTION END -->
+    </section>
+    <!-- About Section End -->
 
-  <!-- MENU SECTION START -->
-  <section id="menu" class="menu">
-    <h2><span>Menu </span>Kami</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vitae excepturi veniam optio.</p>
-
-    <div class="row">
-      <div class="menu-card">
-        <img src="img/menu/ice.png" alt="Ice-Coffee" class="menu-card-img">
-        <h3 class="menu-card-title">- Ice Coffee -</h3>
-        <p class="menu-card-price">IDR 13K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/menu/esp.png" alt="Espresso" class="menu-card-img">
-        <h3 class="menu-card-title">- Espresso -</h3>
-        <p class="menu-card-price">IDR 15K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/menu/cap.png" alt="cappuccino" class="menu-card-img">
-        <h3 class="menu-card-title">- Cappuccino -</h3>
-        <p class="menu-card-price">IDR 18K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/menu/lat.png" alt="Latte" class="menu-card-img">
-        <h3 class="menu-card-title">- Latte -</h3>
-        <p class="menu-card-price">IDR 20K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/menu/mac.png" alt="Macchiato" class="menu-card-img">
-        <h3 class="menu-card-title">- Macchiato -</h3>
-        <p class="menu-card-price">IDR 20K</p>
-      </div>
-      <div class="menu-card">
-        <img src="img/menu/frap.png" alt="Frappe" class="menu-card-img">
-        <h3 class="menu-card-title">- Frappe -</h3>
-        <p class="menu-card-price">IDR 20K</p>
-      </div>
-    </div>
-  </section>
-  <!-- MENU SECTION END -->
-
-  <!-- CONTACT SECTION START -->
-  <section id="contact" class="contact">
-    <h2><span>Kontak </span>Kami</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, facilis.</p>
-
-    <div class="row">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15929.58465127994!2d119.08090075!3d-3.4953727999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d9495184b5f8e7f%3A0x71061691eca52337!2sPasar%20Pambusuang!5e0!3m2!1sen!2sid!4v1676347063292!5m2!1sen!2sid"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-
-      <form action="">
-        <div class="input-group">
-          <i data-feather="user"></i>
-          <input type="text" placeholder="nama">
+    <!-- Menu Section Start -->
+    <section class="menu" id="menu">
+      <h2>Menu<span>Kami</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, ex?</p>
+      <div class="row">
+        <div class="menu-card">
+          <img src="/img/menu/esp.png" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-tittle">- Espresso -</h3>
+          <p class="menu-card-price">IDR 15K</p>
         </div>
-        <div class="input-group">
-          <i data-feather="mail"></i>
-          <input type="text" placeholder="email">
+        <div class="menu-card">
+          <img src="/img/menu/cap.png" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-tittle">- Cappuchino -</h3>
+          <p class="menu-card-price">IDR 17K</p>
         </div>
-        <div class="input-group">
-          <i data-feather="phone"></i>
-          <input type="text" placeholder="nohp">
+        <div class="menu-card">
+          <img src="/img/menu/mac.png" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-tittle">- Machiato -</h3>
+          <p class="menu-card-price">IDR 20K</p>
         </div>
-        <button type="submit" class="btn">Kirim Pesan</button>
-      </form>
-    </div>
-  </section>
-  <!-- CONTACT SECTION END -->
+        <div class="menu-card">
+          <img src="/img/menu/frap.png" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-tittle">- Frappe -</h3>
+          <p class="menu-card-price">IDR 20K</p>
+        </div>
+        <div class="menu-card">
+          <img src="/img/menu/ice.png" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-tittle">- Ice Coffee -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="/img/menu/lat.png" alt="Espresso" class="menu-card-img">
+          <h3 class="menu-card-tittle">- latte -</h3>
+          <p class="menu-card-price">IDR 17K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
 
-  <!-- FOOTHER START -->
+    <!-- Product Section Start -->
+    <section id="products" class="products">
+      <h2>Produk<span>Unggulan</span></h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptas quae eius quis modi officiis.</p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="btn-detail-product"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="./img/products/product.jpg" alt="product1">
+          </div>
+          <div class="product-content">
+            <h3>Robusta Mamasa</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 45k <span>50K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="btn-detail-product"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="./img/products/product.jpg" alt="product1">
+          </div>
+          <div class="product-content">
+            <h3>Robusta Mamasa</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+            </div>
+            <div class="product-price">IDR 45k <span>50K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="btn-detail-product"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="./img/products/product.jpg" alt="product1">
+          </div>
+          <div class="product-content">
+            <h3>Robusta Mamasa</h3>
+            <div class="product-stars">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 45k <span>50K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section End -->
+
+    <!-- Kontak Session Start -->
+    <section id="contact" class="contact">
+      <h2>Kontak<span>Kami</span></h2>
+      <p>Silahkan Menghubungi kami yang ada dibawah</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.591435669761!2d119.078881245355!3d-3.502530696011104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d9495c7d4261753%3A0xc33354c92c0c6055!2sPambusuang%2C%20Balanipa%2C%20Polewali%20Mandar%20Regency%2C%20West%20Sulawesi!5e0!3m2!1sen!2sid!4v1683780207136!5m2!1sen!2sid"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama">
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email">
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no-hp">
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Kontak Session End -->
+    <!-- shopping Cart Start -->
+    <aside>
+      <div class="shopping-cart">
+        <div class="icon-shopping">
+          <a href="#" id="shopping-cart">
+            <i data-feather="shopping-cart" class="shopping-icon"></i>
+          </a>
+        </div>
+        <div class="cart-box">
+          <div class="cart-item">
+            <img src="./img/products/product.jpg" alt="product 1">
+            <div class="item-detail">
+              <h3>Robusta</h3>
+              <div class="item-price">IDR 40k</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+          <div class="cart-item">
+            <img src="./img/products/product.jpg" alt="product 1">
+            <div class="item-detail">
+              <h3>Robusta</h3>
+              <div class="item-price">IDR 40k</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+          <div class="cart-item">
+            <img src="./img/products/product.jpg" alt="product 1">
+            <div class="item-detail">
+              <h3>Robusta</h3>
+              <div class="item-price">IDR 40k</div>
+            </div>
+            <i data-feather="trash-2" class="remove-item"></i>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- shopping Cart End -->
+  </main>
+  <!-- Footer Start -->
   <footer>
     <div class="socials">
-      <a href=""><i data-feather="instagram"></i></a>
-      <a href=""><i data-feather="facebook"></i></a>
-      <a href=""><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="instagram"></i></a>
+      <a href="#"><i data-feather="facebook"></i></a>
+      <a href="#"><i data-feather="twitter"></i></a>
+      <a href="#"><i data-feather="youtube"></i></a>
     </div>
-
     <div class="links">
       <a href="#home">Home</a>
-      <a href="#about">Tentang Kami</a>
+      <a href="#about">About</a>
       <a href="#menu">Menu</a>
-      <a href="#contact">Kontak</a>
+      <a href="#contact">Contact</a>
     </div>
-
     <div class="credit">
-      <p>Created by <a href="">Muhammad-Azwar-Anas</a>. | &copy; 2023</p>
+      <p>created by <a href="">Muhammad Azwar Anas</a> | &copy; 2023</p>
     </div>
   </footer>
-  <!-- FOOTHER END -->
-  <!-- feather Icons -->
+  <!-- Footer End -->
+
+  <!-- Modal Box Item Detail Start -->
+  <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <button class="modal-btn-close"><i data-feather="x"></i></button>
+      <div class="modal-content">
+        <img src="./img/products/product.jpg" alt="1">
+        <div class="product-content">
+          <h3>Product 1</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est recusandae laudantium praesentium blanditiis
+            nam voluptas! Asperiores quaerat laboriosam vero quae.</p>
+          <div class="product-stars">
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+            <i data-feather="star" class="star-full"></i>
+          </div>
+          <div class="product-price">IDR 45k <span>50K</span></div>
+          <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Box Item Detail End -->
+
+  <!-- Feather Icons -->
   <script>
-    feather.replace()
+    feather.replace();
   </script>
-  <!-- My JavaScript -->
-  <script src="js/script.js"></script>
+
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

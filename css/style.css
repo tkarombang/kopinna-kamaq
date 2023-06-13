@@ -431,6 +431,7 @@ aside .shopping-cart {
   justify-content: space-between;
   width: 6.3rem;
   height: 6.3rem;
+  top: 100%;
   transform: scale(1);
   color: var(--primary);
 
@@ -678,7 +679,7 @@ footer .credit a {
     top: 100%;
     right: -100%;
     background-color: var(--putih);
-    width: 30rem;
+    width: 47vw;
     height: 100vh;
     transition: .3s;
   }

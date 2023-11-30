@@ -60,25 +60,26 @@ document.addEventListener('click', function (e) {
 
 
 // Modal Box Start
-const modal = document.querySelector('#item-detail-modal');
-const btnDetailProducts = document.querySelectorAll('.btn-detail-product');
+// const modal = document.querySelector('.modal');
+// const btnDetailProducts = document.querySelectorAll('[x-ref="btnDetailProduct"]');
 
-btnDetailProducts.forEach((btn) => {
-  btn.onclick = (e) => {
-    modal.style.display = 'flex';
-    e.preventDefault();
-  };
-});
+// btnDetailProducts.forEach((btn) => {
+//   btn.onclick = (e) => {
+//     console.log(e);
+//     modal.style.display = 'flex';
+//     e.preventDefault();
+//   };
+// });
 
 // klik tombol Close
-document.querySelector('.modal-btn-close').onclick = (e) => {
-  modal.style.display = 'none';
-  e.preventDefault();
-}
+// document.querySelector('.modal-btn-close').onclick = (e) => {
+//   modal.style.display = 'none';
+//   e.preventDefault();
+// }
 // klik modal
-window.onclick = (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
-  }
-}
+// window.onclick = (e) => {
+//   if (e.target === modal) {
+//     modal.style.display = 'none';
+//   }
+// }
 // Modal Box End

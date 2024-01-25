@@ -44,11 +44,13 @@ document.addEventListener('alpine:init', () => {
     total: 0,
     quantity: 0,
     add(newItem) {
-      // cek apakah ada barang yang sama di cart
       // this.items.push(newItem);
       // this.quantity++;
       // this.total += newItem.total;
       // console.log(newItem);
+
+
+      // cek apakah ada barang yang sama di cart
       const cartItem = this.items.find((item) => item.id === newItem.id);
 
       // jika belum ada / cart masih kosong
@@ -116,6 +118,24 @@ document.addEventListener('alpine:init', () => {
       this.productDetail.pop(showItem);
     }
   })
+});
+
+// Form Validation Checkout Button
+const checkoutButton = document.querySelector('.checkout-button');
+checkoutButton.disabled = true;
+
+const formInputCostumerDetail = document.querySelector('#checkoutForm');
+formInputCostumerDetail.addEventListener('keyup', function () {
+  for (let i = 0; i < formInputCostumerDetail.length; i++) {
+    if (formInputCostumerDetail.elements[i].value.length !== 0) { //kata pak Dika ada element yang kosong
+      checkoutButton.classList.remove('disabled');
+      // checkoutButton.classList.add('disabled');
+    } else {
+      return false;
+    }
+  }
+  checkoutButton.disabled = false;
+  checkoutButton.classList.remove('disabled');
 });
 
 // Konversi Ke-Rp

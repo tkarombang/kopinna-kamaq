@@ -21,7 +21,7 @@
   <!-- AlpineJs -->
   <script src="//unpkg.com/alpinejs" defer></script>
   <!-- AppJs -->
-  <script src="src/app.js"></script>
+  <script src="src/app.js" async></script>
 
 </head>
 
@@ -253,7 +253,8 @@
                 <input type="number" name="phone" id="phone" autocomplete="off">
               </label>
 
-              <button class="checkout-button" type="submit" id="checkout-button" value="checkout">Check</button>
+              <button class="checkout-button disabled" type="submit" id="checkout-button"
+                value="checkout">Check</button>
 
             </form>
           </div>

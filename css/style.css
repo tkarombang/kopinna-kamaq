@@ -569,6 +569,11 @@ aside .form-container .checkout-button {
   cursor: pointer;
 }
 
+aside .form-container .checkout-button.disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
 /* shopping cart end */
 
 /* footer Start */

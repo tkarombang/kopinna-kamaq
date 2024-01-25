@@ -13,8 +13,9 @@ document.querySelector('#search-icon').onclick = (e) => {
 const navbarNav = document.querySelector('.navbar-nav');
 
 // Ketika Hamburger-Menu di-click
-document.querySelector('#hamburger-menu').onclick = () => {
+document.querySelector('#hamburger-menu').onclick = (e) => {
   navbarNav.classList.toggle('active');
+  e.preventDefault();
 };
 
 // Toggle Class Active Hamburger Menu End
@@ -77,9 +78,13 @@ document.addEventListener('click', function (e) {
 //   e.preventDefault();
 // }
 // klik modal
+
 // window.onclick = (e) => {
-//   if (e.target === modal) {
-//     modal.style.display = 'none';
-//   }
+//   const modalId = document.getElementById('item-detail-modal');
+//   if (e.target === modalId) {
+//     modalId.style.display = 'none';
+//   } 
 // }
+
+
 // Modal Box End

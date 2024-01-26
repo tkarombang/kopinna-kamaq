@@ -127,9 +127,10 @@ checkoutButton.disabled = true;
 const formInputCostumerDetail = document.querySelector('#checkoutForm');
 formInputCostumerDetail.addEventListener('keyup', function () {
   for (let i = 0; i < formInputCostumerDetail.length; i++) {
-    if (formInputCostumerDetail.elements[i].value.length !== 0) { //kata pak Dika ada element yang kosong
+    if (formInputCostumerDetail.elements[i].value.length !== 0) {
+      //kata pak Dika: ada element yang kosong
       checkoutButton.classList.remove('disabled');
-      // checkoutButton.classList.add('disabled');
+      checkoutButton.classList.add('disabled');
     } else {
       return false;
     }
@@ -137,6 +138,15 @@ formInputCostumerDetail.addEventListener('keyup', function () {
   checkoutButton.disabled = false;
   checkoutButton.classList.remove('disabled');
 });
+
+// Kirim data ketika tombol checkout diklick
+checkoutButton.addEventListener('click', function (e) {
+  e.preventDefault();
+  const formData = new FormData(formInputCostumerDetail);
+  const data = new URLSearchParams(formData);
+  const objData = Object.fromEntries(data);
+  console.log(objData);
+})
 
 // Konversi Ke-Rp
 const rupiah = (number) => {
